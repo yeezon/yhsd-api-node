@@ -60,7 +60,7 @@ https://docs.youhaosuda.com/app/s/553e33880abc3e6f3e000026
 var Yhsd = require('yhsd-api');
 var auth = new Yhsd.Auth({
     appKey: '8fce436b6fe74d5c8e2317**********',
-	appSecret: '3c91e9bd912145de953e0d**********',
+    appSecret: '3c91e9bd912145de953e0d**********',
 	private: true
 });
 auth.getToken(function(err, token) {
@@ -128,4 +128,24 @@ api.get('customers', { fields: 'id,name' }, function(err, data) {
 api.get('customers/100', function(err, data) {
     console.log(data);
 });
+```
+## WebHook
+
+```javascript
+var Yhsd = require('yhsd-api');
+
+/**
+ * 初始化
+ * @param {string} webHookToken
+ * @constructor
+ */
+var webHook = new Yhsd.WebHook(webHookToken);
+
+/**
+ * 验证 Hmac
+ * @param {string} hmac
+ * @param {string} bodyData 响应体数据
+ * @return {boolean}
+ */
+webHook.verifyHmac(hmac, bodyData);
 ```
