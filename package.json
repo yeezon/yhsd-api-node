@@ -1,16 +1,23 @@
 {
   "name": "yhsd-api",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Youhaosuda API SDK for node.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yeezon/yhsd-api-node.git"
+    "url": "git+https://github.com/yeezon/yhsd-api-node.git"
   },
   "keywords": [
     "youhaosuda",
     "api"
   ],
   "author": "Yeezon, Inc.",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeezon/yhsd-api-node/issues"
+  },
+  "homepage": "https://github.com/yeezon/yhsd-api-node#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
