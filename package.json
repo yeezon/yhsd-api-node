@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/yeezon/yhsd-api-node#readme",
   "scripts": {
-    "test": " ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --timeout 1500000"
+    "test": " ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --timeout 1500000"
   },
   "devDependencies": {
     "istanbul": "^0.4.1",
