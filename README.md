@@ -2,8 +2,10 @@
 
 友好速搭 API SDK for Node
 
-[![Build Status](https://travis-ci.org/Obzer/yhsd-api-node.svg?branch=master)](https://travis-ci.org/Obzer/yhsd-api-node)
-[![Coverage Status](https://coveralls.io/repos/Obzer/yhsd-api-node/badge.svg?branch=master&service=github)](https://coveralls.io/github/Obzer/yhsd-api-node?branch=master)
+[![Build status](https://img.shields.io/travis/Obzer/yhsd-api-node.svg?style=flat-square)](https://travis-ci.org/Obzer/yhsd-api-node)
+[![Coverage Status](https://img.shields.io/coveralls/Obzer/yhsd-api-node.svg?style=flat-square)](https://coveralls.io/repos/Obzer/yhsd-api-node)
+[![Dependency Status](https://img.shields.io/david/Obzer/yhsd-api-node.svg?style=flat-square)](https://david-dm.org/Obzer/yhsd-api-node)
+
 ## 安装
 
 ```bash
