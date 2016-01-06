@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/yeezon/yhsd-api-node#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": " ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --timeout 1500000"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.6"
   }
 }

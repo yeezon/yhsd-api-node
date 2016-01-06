@@ -2,6 +2,10 @@
 
 友好速搭 API SDK for Node
 
+[![Build status](https://img.shields.io/travis/Obzer/yhsd-api-node.svg?style=flat-square)](https://travis-ci.org/Obzer/yhsd-api-node)
+[![Coverage Status](https://img.shields.io/coveralls/Obzer/yhsd-api-node.svg?style=flat-square)](https://coveralls.io/repos/Obzer/yhsd-api-node)
+[![Dependency Status](https://img.shields.io/david/Obzer/yhsd-api-node.svg?style=flat-square)](https://david-dm.org/Obzer/yhsd-api-node)
+
 ## 安装
 
 ```bash
@@ -14,10 +18,10 @@ $ npm install --save yhsd-api
 var Yhsd = require('yhsd-api');
 
 /**
- * 初始化 
+ * 初始化
  * @param {Object} options
  * @constructor
- * 
+ *
  * options 可选值：
  * appKey {string} 应用的appKey
  * appSecret {string} 应用的appSecret
@@ -51,7 +55,7 @@ auth.getAuthorizeUrl(shopKey, state);
 auth.getToken(code, callback);
 ```
 
-详见 
+详见
 https://docs.youhaosuda.com/app/s/553e33880abc3e6f3e000026
 
 ### 例子
@@ -112,7 +116,7 @@ api.post(path, data, callback);
 api.delete(path, callback);
 ```
 
-详见 
+详见
 https://docs.youhaosuda.com/app/553e335f0abc3e6f3e000023
 
 ### 例子
