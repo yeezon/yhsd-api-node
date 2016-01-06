@@ -6,6 +6,7 @@
 [![Coverage Status](https://img.shields.io/coveralls/yeezon/yhsd-api-node.svg?style=flat-square)](https://coveralls.io/repos/yeezon/yhsd-api-node)
 [![Dependency Status](https://img.shields.io/david/yeezon/yhsd-api-node.svg?style=flat-square)](https://david-dm.org/yeezon/yhsd-api-node)
 
+
 ## 安装
 
 ```bash
