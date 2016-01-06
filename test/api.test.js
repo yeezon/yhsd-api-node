@@ -107,34 +107,33 @@ describe('test/api.test.js', function () {
         })
     });
 
-    it('api should be return error code 429', function (done) {
-        var total = 0;
-        function _request() {
-            var index = 0;
-            api.get('shop', function (err, body) {
-                ++index;
-                if(index == 3) round()
-            });
-            api.get('shop', function (err, body) {
-                ++index;
-                if(index == 3) round()
-
-            });
-            api.get('shop', function (err, body) {
-                ++index;
-                if(index == 3) round()
-            });
-        }
-        function round(){
-            total++;
-            if(total < 20){
-                console.log(total);
-                setTimeout(_request,1000);
-            } else {
-                done();
-            }
-        }
-        _request();
-    });
+    //it('api should be return error code 429', function (done) {
+    //    var total = 0;
+    //    function _request() {
+    //        var index = 0;
+    //        api.get('shop', function (err, body) {
+    //            ++index;
+    //            if(index == 3) round()
+    //        });
+    //        api.get('shop', function (err, body) {
+    //            ++index;
+    //            if(index == 3) round()
+    //
+    //        });
+    //        api.get('shop', function (err, body) {
+    //            ++index;
+    //            if(index == 3) round()
+    //        });
+    //    }
+    //    function round(){
+    //        total++;
+    //        if(total < 20){
+    //            setTimeout(_request,1000);
+    //        } else {
+    //            done();
+    //        }
+    //    }
+    //    _request();
+    //});
 });
 
