@@ -1,6 +1,7 @@
 # yhsd-api-node
 
 友好速搭 API SDK for Node
+[![Build Status](https://travis-ci.org/Obzer/yhsd-api-node.svg?branch=master)](https://travis-ci.org/Obzer/yhsd-api-node)
 
 ## 安装
 
