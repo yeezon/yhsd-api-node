@@ -1,6 +1,6 @@
 {
   "name": "yhsd-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Youhaosuda API SDK for node.",
   "main": "index.js",
   "repository": {
