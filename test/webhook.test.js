@@ -22,6 +22,14 @@ describe('test/webhook.test.js', function () {
     });
 
     it('verifyHmac should be fail', function () {
-            webHook.verifyHmac('123','123').should.be.false();
+        webHook.verifyHmac('123', '123').should.be.false();
     });
-})
+
+    it('should verify hmac as correct', function () {
+        webHook.verifyHmac('Fp6SL4UABMWhXojvSGBneRs0h0wEnqxQrqT/ko/mqg0=', '12345qwert').should.be.true();
+    });
+
+    it('should verify hmac in Chinese as correct', function () {
+        webHook.verifyHmac('FXX5JR4sC7Z6kktz/vhxLcy3ydEdIHWpAHnqOxnXhJU=', '12345qwert友好速搭很棒').should.be.true();
+    })
+});
