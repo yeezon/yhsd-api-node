@@ -1,8 +1,6 @@
 /**
  * Created by obzerg on 16/1/5.
  */
-var http = require('http');
-var bluebird = require('bluebird');
 var should = require('should');
 var Yhsd = require('../index');
 
@@ -109,7 +107,7 @@ describe('test/api.test.js', function () {
         })
     });
   
-    it('api should be return connect ETIMEDOUT error', function (done) {
+    it('api should be throw ENOTFOUND error', function (done) {
         Yhsd.config.apiHost = 'localhost:32876';
         Yhsd.config.appHost = 'localhost:32876';
         Yhsd.config.httpProtocol = 'http';
@@ -124,6 +122,7 @@ describe('test/api.test.js', function () {
             }
           }
           console.log(token);
+          done(new Error('没有捕捉到错误!'));
         });
     });
   
@@ -155,5 +154,5 @@ describe('test/api.test.js', function () {
     //    }
     //    _request();
     //});
-  });
+});
 
