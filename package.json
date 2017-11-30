@@ -26,5 +26,8 @@
     "should": "^8.0.2"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   }
 }
