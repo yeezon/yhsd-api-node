@@ -106,7 +106,26 @@ describe('test/api.test.js', function () {
             done();
         })
     });
-
+  
+    it('api should be throw ENOTFOUND error', function (done) {
+        Yhsd.config.apiHost = 'localhost:32876';
+        Yhsd.config.appHost = 'localhost:32876';
+        Yhsd.config.httpProtocol = 'http';
+        api.get('products',function (err, token) {
+          if (err){
+            // console.log(err.message);
+            var eResult = err.message.indexOf('ENOTFOUND');
+            if (eResult > 0) {
+              (eResult).should.be.ok();
+              done();
+              return;
+            }
+          }
+          console.log(token);
+          done(new Error('没有捕捉到错误!'));
+        });
+    });
+  
     //it('api should be return error code 429', function (done) {
     //    var total = 0;
     //    function _request() {
