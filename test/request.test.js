@@ -8,24 +8,24 @@ var reqCountMap = {};
 var testToken = 'fbc7f83524f14e358a325a5066acd741';
 
 describe('test/request.test.js', function () {
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 200; i++) {
     it(`should return request count by the token ${i}`, function (done) {
       this.timeout(1 * 1000);
       console.time('whole');
       console.time('first');
-      console.time('save');
-      console.time('get');
+      console.time('save time');
+      console.time('get time');
       Yhsd.config.saveRequestCount = function (token, reqCount, callback) {
-        console.log('save',reqCount);
-        console.timeEnd('save');
-        console.time('save');
+        console.timeEnd('save time');
+        console.log('save',typeof reqCount,reqCount);
+        console.time('save time');
         reqCountMap[token] = reqCount;
         callback && callback(null);
       }
       Yhsd.config.getRequestCount = function (token, callback) {
-        console.timeEnd('get');
-        console.time('get');
-        console.log('get',reqCountMap[token]);
+        console.timeEnd('get time');
+        console.log('get',typeof reqCountMap[token],reqCountMap[token]);
+        console.time('get time');
         callback && callback(null, reqCountMap[token]);
       }
     
