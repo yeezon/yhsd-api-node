@@ -48,6 +48,7 @@ describe('test/request.test.js', function () {
       var i = 0;
 
       function request() {
+        console.time('complete');
         _request.request({
           hostname: Yhsd.config.apiHost,
           path: '/v1/shop',
@@ -58,6 +59,7 @@ describe('test/request.test.js', function () {
           }
         })
           .then(function () {
+            console.timeEnd('complete');
             console.log(reqCountMap[token], i);
           })
           .then(function () {
