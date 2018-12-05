@@ -104,9 +104,10 @@ describe('test/api.test.js', function () {
   });
 
   it('api should be throw ENOTFOUND error', function (done) {
-    Yhsd.config.apiHost = 'localhost:32876';
-    Yhsd.config.appHost = 'localhost:32876';
-    Yhsd.config.httpProtocol = 'http';
+    var api = new Yhsd.Api('5e242b4b41d14a2d8f4d80a9c6b05bea',{
+      host: 'localhost:32876',
+      protocol: 'http'
+    });
     api.get('products').then(function (body) {
       console.log(body);
       should.not.exist(body);
