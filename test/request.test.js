@@ -11,7 +11,7 @@ var token = '5e242b4b41d14a2d8f4d80a9c6b05bea';
 
 describe('test/request.test.js', function () {
   describe('auth request', function () {
-    const _request = new Request();
+    var _request = new Request();
     it('should return token', function (done) {
       console.time('complete');
       _request.request({
@@ -35,7 +35,7 @@ describe('test/request.test.js', function () {
   });
 
   describe('api request', function () {
-    const _request = new Request({
+    var _request = new Request({
       getRequestCount: function () {
         return Promise.resolve(reqCountMap[token] || 0);
       },
