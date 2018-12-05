@@ -25,8 +25,8 @@ describe('test/request.test.js', function () {
       }, {
         grant_type: 'client_credentials',
       }).then(function (data) {
-        console.timeEnd('complete');
-        console.log('token', data);
+        // console.timeEnd('complete');
+        // console.log('token', data);
         should.ok(data);
         token = data;
         done();
@@ -59,8 +59,8 @@ describe('test/request.test.js', function () {
           }
         })
           .then(function () {
-            console.timeEnd('complete');
-            console.log(reqCountMap[token], i);
+            // console.timeEnd('complete');
+            // console.log(reqCountMap[token], i);
           })
           .then(function () {
             if (i < 200) {
