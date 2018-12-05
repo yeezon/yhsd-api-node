@@ -26,17 +26,6 @@ describe('test/auth.test.js', function () {
         //缺少callbackUrl
     });
 
-    it('get token should throw error', function () {
-        (function () {
-            new Yhsd.Auth({
-                appKey: '548e29e46091449e949a8e1ffe4e4167',
-                appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5',
-                private: true
-            }).getToken()
-        }).should.throw('缺少参数');
-        //缺少参数
-    });
-
     it('get public token should throw error', function () {
         (function () {
             new Yhsd.Auth({
@@ -54,8 +43,7 @@ describe('test/auth.test.js', function () {
             appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5',
             private: true
         });
-        auth.getToken(function (err, token) {
-            should.not.exist(err);
+        auth.getToken().then(function (token) {
             token.should.equal('fbc7f83524f14e358a325a5066acd741');
             done();
         });
@@ -68,7 +56,7 @@ describe('test/auth.test.js', function () {
             appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5' + 'error',
             private: true
         });
-        auth.getToken(function (err, token) {
+        auth.getToken().catch(function (err) {
             should.exist(err);
             done();
         });
@@ -81,7 +69,7 @@ describe('test/auth.test.js', function () {
             appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5' + 'error',
             callbackUrl: 'http://your.app.url'
         });
-        auth.getToken('your code', function (err, token) {
+        auth.getToken('your code').catch(function (err) {
             should.exist(err);
             done();
         });
