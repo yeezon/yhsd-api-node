@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adc8df4f-38bd-494b-8ef1-18e42ea5e47d" name="Default" comment="添加了">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/request.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/request.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/auth.test.js" afterDir="false" />
     </list>
     <ignored path="yhsd-api-node.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,26 +34,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="48" />
+          <entry key="js" value="60" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="48" />
+          <entry key="JavaScript" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="4066" />
-          <entry key="txt" value="649" />
+          <entry key="js" value="4873" />
+          <entry key="txt" value="779" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="4066" />
-          <entry key="PLAIN_TEXT" value="649" />
+          <entry key="JavaScript" value="4873" />
+          <entry key="PLAIN_TEXT" value="779" />
         </counts>
       </usages-collector>
     </session>
@@ -64,27 +62,14 @@
     <favorites_list name="yhsd-api-node" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47291666">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/Request.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="66" column="9" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#2421#2490#0" />
-                    <element signature="e#1294#1384#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/Api.js">
+            <entry file="file://$PROJECT_DIR$/test/auth.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="582">
-                  <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+                <state relative-caret-position="589">
+                  <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -92,34 +77,15 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/Auth.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="667">
-                  <caret line="107" column="37" lean-forward="true" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+                <state relative-caret-position="414">
+                  <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
                   <folding>
                     <element signature="e#214#550#0" />
-                    <element signature="e#654#687#0" />
-                    <element signature="e#750#791#0" />
-                    <element signature="e#912#1005#0" />
-                    <element signature="e#1042#1467#0" />
-                    <element signature="e#1078#1119#0" />
-                    <element signature="e#1473#1593#0" />
-                    <element signature="e#1641#2149#0" />
-                    <element signature="e#1677#1718#0" />
-                    <element signature="e#1826#2101#0" />
-                    <element signature="e#3734#3970#0" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/request.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="605">
-                  <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -142,6 +108,8 @@
       <find>reduceReqCountFn</find>
       <find>onAfter</find>
       <find>token</find>
+      <find>timeOffset</find>
+      <find>getToken</find>
     </findStrings>
     <replaceStrings>
       <replace>onAfterHandle</replace>
@@ -164,15 +132,15 @@
         <option value="$PROJECT_DIR$/test/webhook.test.js" />
         <option value="$PROJECT_DIR$/lib/WebHook.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/test/auth.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/test/request.test.js" />
         <option value="$PROJECT_DIR$/lib/util.js" />
         <option value="$PROJECT_DIR$/lib/request.js" />
-        <option value="$PROJECT_DIR$/lib/config.js" />
-        <option value="$PROJECT_DIR$/lib/Request.js" />
-        <option value="$PROJECT_DIR$/lib/Auth.js" />
         <option value="$PROJECT_DIR$/lib/Api.js" />
+        <option value="$PROJECT_DIR$/lib/Request.js" />
+        <option value="$PROJECT_DIR$/lib/config.js" />
+        <option value="$PROJECT_DIR$/test/request.test.js" />
+        <option value="$PROJECT_DIR$/lib/Auth.js" />
+        <option value="$PROJECT_DIR$/test/auth.test.js" />
       </list>
     </option>
   </component>
@@ -218,6 +186,11 @@
               <item name="yhsd-api-node" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="yhsd-api-node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yhsd-api-node" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -249,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.test/request.test.js.should request succeed">
+  <component name="RunManager" selected="Mocha.test/auth.test.js">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -284,7 +257,21 @@
       <recursive>false</recursive>
       <method v="2" />
     </configuration>
-    <configuration name="test/request.test.js" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+    <configuration name="test/auth.test.js" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>node</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/auth.test.js</test-file>
+      <test-names>
+        <name value="test/auth.test.js" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test/request.test.js.api request" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>node</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -295,6 +282,22 @@
       <test-file>$PROJECT_DIR$/test/request.test.js</test-file>
       <test-names>
         <name value="test/request.test.js" />
+        <name value="api request" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test/request.test.js.auth request" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>node</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/request.test.js</test-file>
+      <test-names>
+        <name value="test/request.test.js" />
+        <name value="auth request" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -313,14 +316,35 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="test/request.test.js.should return token" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>node</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/request.test.js</test-file>
+      <test-names>
+        <name value="test/request.test.js" />
+        <name value="should return token" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Mocha.test/request.test.js" />
       <item itemvalue="Mocha.test/request.test.js.should request succeed" />
+      <item itemvalue="Mocha.test/request.test.js.should return token" />
+      <item itemvalue="Mocha.test/request.test.js.auth request" />
+      <item itemvalue="Mocha.test/request.test.js.api request" />
+      <item itemvalue="Mocha.test/auth.test.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.test/auth.test.js" />
+        <item itemvalue="Mocha.test/request.test.js.api request" />
+        <item itemvalue="Mocha.test/request.test.js.auth request" />
+        <item itemvalue="Mocha.test/request.test.js.should return token" />
         <item itemvalue="Mocha.test/request.test.js.should request succeed" />
-        <item itemvalue="Mocha.test/request.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +360,7 @@
       <updated>1466654777532</updated>
       <workItem from="1543302078650" duration="4178000" />
       <workItem from="1543817117957" duration="193000" />
-      <workItem from="1543828602842" duration="21267000" />
+      <workItem from="1543828602842" duration="25924000" />
     </task>
     <task id="LOCAL-00001" summary="getReqCountHandle() promisify;">
       <created>1543374846281</created>
@@ -569,47 +593,109 @@
       <option name="project" value="LOCAL" />
       <updated>1543917077738</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="忘记调用 request 函数；">
+      <created>1543917534283</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1543917534284</updated>
+    </task>
+    <task id="LOCAL-00035" summary="更新Auth.js的请求实现；">
+      <created>1543917693899</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1543917693899</updated>
+    </task>
+    <task id="LOCAL-00036" summary="格式化；">
+      <created>1543919077301</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1543919077301</updated>
+    </task>
+    <task id="LOCAL-00037" summary="添加判断；">
+      <created>1543919093902</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1543919093902</updated>
+    </task>
+    <task id="LOCAL-00038" summary="将 this转移到 self;">
+      <created>1543919112686</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1543919112686</updated>
+    </task>
+    <task id="LOCAL-00039" summary="格式化；">
+      <created>1543919162387</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1543919162387</updated>
+    </task>
+    <task id="LOCAL-00040" summary="添加 SUMMAND;">
+      <created>1543930370273</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1543930370273</updated>
+    </task>
+    <task id="LOCAL-00041" summary="更新了 request.test.js;">
+      <created>1543930385708</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1543930385708</updated>
+    </task>
+    <task id="LOCAL-00042" summary="添加请求时间日志；">
+      <created>1543977124118</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1543977124118</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 13m 59s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_request_test_js_api_request - 2018.12.04 at 21h 31m 22s.xml">
+      <configuration name="test/request.test.js.api request" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 14m 21s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_request_test_js_api_request - 2018.12.04 at 21h 32m 03s.xml">
+      <configuration name="test/request.test.js.api request" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 16m 29s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_request_test_js_api_request - 2018.12.05 at 10h 30m 41s.xml">
+      <configuration name="test/request.test.js.api request" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 16m 58s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_request_test_js_api_request - 2018.12.05 at 10h 31m 23s.xml">
+      <configuration name="test/request.test.js.api request" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 17m 26s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_auth_test_js - 2018.12.05 at 10h 35m 09s.xml">
+      <configuration name="test/auth.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 19m 24s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_auth_test_js - 2018.12.05 at 10h 36m 49s.xml">
+      <configuration name="test/auth.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 19m 26s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_auth_test_js - 2018.12.05 at 10h 38m 03s.xml">
+      <configuration name="test/auth.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 20m 08s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_auth_test_js - 2018.12.05 at 10h 38m 06s.xml">
+      <configuration name="test/auth.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 22m 08s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_auth_test_js - 2018.12.05 at 10h 38m 14s.xml">
+      <configuration name="test/auth.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_request_test_js_should_request_succeed - 2018.12.03 at 20h 23m 28s.xml">
-      <configuration name="test/request.test.js.should request succeed" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_auth_test_js - 2018.12.05 at 10h 40m 33s.xml">
+      <configuration name="test/auth.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25638000" />
+    <option name="totallyTimeSpent" value="30295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" order="0" weight="0.18802084" />
       <window_info id="Structure" order="1" weight="0.1796875" />
@@ -618,7 +704,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -665,14 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="promiseify requestAction();" />
-    <MESSAGE value="去掉以前 callback 的错误参数；" />
-    <MESSAGE value="返回值;" />
-    <MESSAGE value="更新定时实现；" />
-    <MESSAGE value="直接请求返回错误；" />
-    <MESSAGE value="返回结果改为promise;" />
-    <MESSAGE value="返回结果逻辑改为promise;" />
-    <MESSAGE value=" 添加 util.js;" />
     <MESSAGE value="去掉 noConflict()；" />
     <MESSAGE value="Api的构造函数添加 getRequestCount 和 saveRequestCount 参数；" />
     <MESSAGE value="添加默认记数方法；" />
@@ -690,7 +768,15 @@
     <MESSAGE value="调整请求后的操作；" />
     <MESSAGE value="添加了increment和decrement两个函数；" />
     <MESSAGE value="支持没有计数的请求;" />
-    <option name="LAST_COMMIT_MESSAGE" value="支持没有计数的请求;" />
+    <MESSAGE value="忘记调用 request 函数；" />
+    <MESSAGE value="更新Auth.js的请求实现；" />
+    <MESSAGE value="添加判断；" />
+    <MESSAGE value="将 this转移到 self;" />
+    <MESSAGE value="格式化；" />
+    <MESSAGE value="添加 SUMMAND;" />
+    <MESSAGE value="更新了 request.test.js;" />
+    <MESSAGE value="添加请求时间日志；" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加请求时间日志；" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/webhook.test.js">
@@ -708,13 +794,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.0/core-modules/querystring.js" />
-    <entry file="file://$PROJECT_DIR$/test/auth.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3289">
-          <caret line="143" column="55" selection-start-line="143" selection-start-column="55" selection-end-line="143" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bluebird/js/release/join.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -735,13 +814,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/bluebird/js/release/timers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="27" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bluebird/js/release/props.js">
@@ -800,24 +872,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/request.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bluebird/js/release/bluebird.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -842,41 +900,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Request.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="66" column="9" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="613">
+          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <element signature="e#2421#2490#0" />
-            <element signature="e#1294#1384#0" />
+            <element signature="e#1806#1896#0" />
+            <element signature="e#1941#2517#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/request.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="107" column="37" lean-forward="true" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+        <state relative-caret-position="414">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
           <folding>
             <element signature="e#214#550#0" />
-            <element signature="e#654#687#0" />
-            <element signature="e#750#791#0" />
-            <element signature="e#912#1005#0" />
-            <element signature="e#1042#1467#0" />
-            <element signature="e#1078#1119#0" />
-            <element signature="e#1473#1593#0" />
-            <element signature="e#1641#2149#0" />
-            <element signature="e#1677#1718#0" />
-            <element signature="e#1826#2101#0" />
-            <element signature="e#3734#3970#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Api.js">
+    <entry file="file://$PROJECT_DIR$/test/auth.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+        <state relative-caret-position="589">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
         </state>
       </provider>
     </entry>
