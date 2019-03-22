@@ -1,6 +1,6 @@
 # yhsd-api-node
 
-友好速搭 API SDK for Node(v4.9.1)
+友好速搭 API SDK for Node(>= v6) 
 支持`Promise`依赖[bluebird](https://github.com/petkaantonov/bluebird)。
 
 
