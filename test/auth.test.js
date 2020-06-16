@@ -71,6 +71,7 @@ describe('test/auth.test.js', function () {
         });
         auth.getToken('your code').catch(function (err) {
             should.exist(err);
+            should.ok(err.message == '无效的 token');
             done();
         });
         //获取公有应用token应传入code
