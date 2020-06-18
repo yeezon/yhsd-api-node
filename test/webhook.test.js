@@ -2,6 +2,7 @@
  * Created by obzerg on 16/1/5.
  */
 var should = require('should');
+var YhsdParamError = require('../lib/Error').YhsdParamError;
 var Yhsd = require('../index');
 
 describe('test/webhook.test.js', function () {
@@ -12,13 +13,13 @@ describe('test/webhook.test.js', function () {
     it('get webhook instance should be fail', function () {
         (function () {
             new Yhsd.WebHook()
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
     });
 
     it('verifyHmac should be throw error', function () {
         (function () {
             webHook.verifyHmac()
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
     });
 
     it('verifyHmac should be fail', function () {

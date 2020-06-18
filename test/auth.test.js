@@ -2,9 +2,10 @@
  * Created by obzerg on 16/1/5.
  */
 var should = require('should');
-var Yhsd = require('../index');
 var crypto = require('crypto');
 var querystring = require('querystring');
+var YhsdParamError = require('../lib/Error').YhsdParamError;
+var Yhsd = require('../index');
 
 describe('test/auth.test.js', function () {
     it('get auth instance should be fail', function () {
@@ -12,7 +13,7 @@ describe('test/auth.test.js', function () {
             new Yhsd.Auth({
                 appKey: '548e29e46091449e949a8e1ffe4e4167'
             })
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
         //appKey和appSecret缺一不可
     });
 
@@ -22,7 +23,7 @@ describe('test/auth.test.js', function () {
                 appKey: '548e29e46091449e949a8e1ffe4e4167',
                 appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5'
             })
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
         //缺少callbackUrl
     });
 
@@ -33,7 +34,7 @@ describe('test/auth.test.js', function () {
                 appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5',
                 callbackUrl: 'http://your.app.url'
             }).getToken()
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
         //缺少参数
     });
 
@@ -58,6 +59,7 @@ describe('test/auth.test.js', function () {
         });
         auth.getToken().catch(function (err) {
             should.exist(err);
+            should.ok(err.message == '未授权, 请检查 appKey, appSecret!');
             done();
         });
         //获取私有应用token
@@ -71,7 +73,7 @@ describe('test/auth.test.js', function () {
         });
         auth.getToken('your code').catch(function (err) {
             should.exist(err);
-            should.ok(err.message == '无效的 token');
+            should.ok(err.message == '无效客户端, 请检查 appKey, appSecret!');
             done();
         });
         //获取公有应用token应传入code
@@ -84,7 +86,7 @@ describe('test/auth.test.js', function () {
                 appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5' + 'error',
                 callbackUrl: 'http://your.app.url'
             }).getAuthorizeUrl()
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
         //获取授权地址应传入appKey和参数中的state
     });
 
@@ -108,7 +110,7 @@ describe('test/auth.test.js', function () {
                 appSecret: 'b9fec3d128064ea89f1e9b8324eeabc5' + 'error',
                 callbackUrl: 'http://your.app.url'
             }).verifyHmac()
-        }).should.throw('缺少参数');
+        }).should.throw(YhsdParamError);
     });
     //验证hmac需传入参数json对象
 

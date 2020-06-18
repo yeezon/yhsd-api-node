@@ -45,10 +45,10 @@ describe('test/request.test.js', function () {
       },
     });
     it('should return ok', function (done) {
+      this.timeout(12000)
       var i = 0;
 
       function request() {
-        console.time('complete');
         _request.request({
           hostname: Yhsd.config.apiHost,
           path: '/v1/shop',
@@ -58,10 +58,6 @@ describe('test/request.test.js', function () {
             'X-API-ACCESS-TOKEN': token
           }
         })
-          .then(function () {
-            // console.timeEnd('complete');
-            // console.log(reqCountMap[token], i);
-          })
           .then(function () {
             if (i < 200) {
               request();
